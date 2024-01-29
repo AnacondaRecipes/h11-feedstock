@@ -18,12 +18,18 @@ requirements:
   host:
     - python
     - pip
+    - typing_extensions  # [py<38]
+    - wheel
   run:
-    - python >=3.6
+    - python
 
 test:
   imports:
     - h11
+  requires:
+    - pip
+  commands:
+    - pip check
 
 about:
   home: https://github.com/python-hyper/h11

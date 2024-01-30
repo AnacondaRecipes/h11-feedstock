@@ -18,10 +18,10 @@ requirements:
   host:
     - python
     - pip
-    - typing_extensions  # [py<38]
     - wheel
   run:
     - python
+    - typing_extensions  # [py<38]
 
 test:
   imports:
